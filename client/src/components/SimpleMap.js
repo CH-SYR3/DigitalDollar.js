@@ -24,7 +24,7 @@ render() {
                 <AnyReactComponent
                     lat={17.6291116}
                     lng={-63.2319666}
-                    text={'Camrone Hassell'}
+                    text={'Camrone Hassell Location'}
                     />
             </GoogleMapReact>>
         </div>
