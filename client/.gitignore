@@ -9,7 +9,7 @@
 *.json
 *.html
 */public
-/nm
+/node_modules
 
 
 

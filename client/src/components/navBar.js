@@ -15,7 +15,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Button from '@material-ui/core/Button';
 
-const drawerWidth = 255;
+const drawerWidth = 250;
 
 const styles = theme => ({
   button: {
@@ -56,16 +56,16 @@ function ClippedDrawer(props) {
         </Toolbar>
       </AppBar>
       <Drawer className={classes.drawer} variant="permanent" classes={{paper: classes.drawerPaper,}}>
-        <div >
+        <div style={{marginTop: '50px'}}>
         <img 
           src="http://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
           alt="avatar"
-          style={{height: '250px'}}
+          style={{height: '230px', width: '230px'}}
         />
         </div>
         <Divider />
-        {/*
-        /<List>
+        {
+        <List>
           {['Enter Code'].map((text, index) => (
             <ListItem button key={text}>
               
@@ -73,8 +73,8 @@ function ClippedDrawer(props) {
             </ListItem>
           ))}
         </List>
-        */}
-        <Button variant="contained" size="large" color="primary" className={classes.button} style={{marginTop: '390px'}}>
+        }
+        <Button variant="contained" size="large" color="primary" className={classes.button} style={{marginTop: '30px'}}>
           Buy Me a Coffe
         </Button>
         
