@@ -18,9 +18,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import Paper from '@material-ui/core/Paper';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
+import Button from '@material-ui/core/Button';
 
 
 const drawerWidth = 240;
@@ -118,7 +116,7 @@ class PersistentDrawerLeft extends React.Component {
                     className={classNames(classes.menuButton, open && classes.hide)}>
                 <MenuIcon />
                 </IconButton>
-                <Typography variant="h6" color="inherit" noWrap>DigitalDollar</Typography>
+                <Button onClick={this.handleDrawerOpen} variant="h6" color="inherit" noWrap>DigitalDollar</Button>
             </Toolbar>
         </AppBar>
         <Drawer
@@ -134,8 +132,17 @@ class PersistentDrawerLeft extends React.Component {
                 <IconButton onClick={this.handleDrawerClose}>
                     {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                 </IconButton>
+                <Button onClick={this.handleDrawerClose}>Close</Button>
+            
             </div>
-            <h1>hello</h1>
+            <Divider />
+                    <img 
+            src="http://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
+            alt="avatar"
+            style={{height: '230px', width: '230px'}}
+        />
+        
+
 
                 <Divider />
             <List>
@@ -155,6 +162,14 @@ class PersistentDrawerLeft extends React.Component {
                 </ListItem>
             ))}
             </List>
+            <List>
+                <Button
+                                variant="contained" size="large" color="primary" 
+                className={classes.button} style={{marginRight: '30px', marginTop: '30px', marginLeft: '30px'}}>
+                    Buy Me a Coffe?
+                </Button>
+            </List>
+
         </Drawer>
         <main 
             className={classNames(classes.content-5, {
