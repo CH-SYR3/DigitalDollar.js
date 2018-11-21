@@ -18,16 +18,12 @@ project-grid {
   padding-top: 2em;
 }
 
-.contact-grid {
-  text-align: center;
-  justify-content: center;
-  width: 80%;
-  height: 550px;
-  background: white;
-  color: black;
-  margin-bottom: 20px;
+.Activity-grid {
+  
+  
 
 }
+
 
 .contact-grid h2 {
   font-family: 'Anton', sans-serif;

@@ -83,7 +83,7 @@ const styles = theme => ({
 
 class PersistentDrawerLeft extends React.Component {
     state = {
-        open: true,
+        open: false,
         };
 
     handleDrawerOpen = () => {

@@ -1,28 +1,46 @@
-import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
+import React, {  Component } from 'react';
+import {  Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
+import {  Container, Row, Col } from 'reactstrap';
+import Paper from '@material-ui/core/Paper';
 
-class Contact extends Component {
+class Landing extends Component {
     render() {
         return(
-
-            <div className="contact-body"> 
-
-                {/*CONTACT GRID*/}
-                <Grid className="contact-grid">
-
-                    {/*LEFT HALF PAGE CELL*/}
-                    <Cell col={6}>
-                    <h2>Camrone Hassell</h2>
-                    
-                    </Cell>
-                    {/*RIGHT HALF PAGE CELL*/}
-                    <Cell col={6}>
-                        <h2>Contact Me</h2>
-                    </Cell>
+            //Activity GRID
+            <div style={{width: '190px', height: '500px', marginTop: '30px', marginLeft: '30px'}}>
+                <Grid className="Activity-grid">
+                    <Paper>
+                        <Cell  style={{width: '190px', height: '500px'}}>
+                            <h2>Activities</h2>
+                        </Cell>
+                    </Paper>
                 </Grid>
+
+                {/*Maps GRID*/}
+                <div style={{width: '1045px', height: '500px', marginTop: '-500px', marginLeft: '250px'}}>
+                    <Grid className="Maps-grid">
+                        <Paper>
+                            <Cell  style={{width: '1045px', height: '500px'}}>
+                                <h2>Google Map</h2>
+
+                            </Cell>
+                        </Paper>
+                    </Grid>
+
+
+                    {/*Comments GRID*/}
+                    <div style={{width: '1295px', height: 'auto', marginTop: '30px', marginLeft: '-250px'}}>
+                        <Grid className="Comments-grid">
+                            <Paper>
+                                <Cell  style={{width: '1295px', height: 'auto'}}>
+                                    <h2>Comments</h2>
+                                </Cell>
+                            </Paper>
+                        </Grid>            
+                    </div>
+                </div>
             </div>
         )
     }
 }
-
-export default Contact;
+export default Landing;
