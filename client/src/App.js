@@ -6,6 +6,7 @@ import Header from './layouts/header';
 import Tabs from './layouts/tabs';
 import Landing from './components/landingPage';
 import { Container, Row, Col } from 'reactstrap';
+import LP from './components/lp';
 
 
 
@@ -15,7 +16,7 @@ class App extends Component {
       <div className="App">
         <Header/>
           <Tabs style={{marginBottom: '700px'}}/>
-        <Landing/> 
+        <LP/>        
       </div>
     );
   }
