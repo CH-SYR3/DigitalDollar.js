@@ -7,7 +7,9 @@ class lp extends Component {
             <div style={{width: '100', margin: 'auto'}}>
                {/*LANDING PAGE GRID*/}
                 <Grid className="landing-grid">
+                    
                     <Cell col={12}>
+.            <h1 style={{color: 'white'}}>This is the home page!</h1>
 
                         {/*AVATAR IMG*/}
                         <img 
@@ -15,8 +17,9 @@ class lp extends Component {
                             alt="avatar"
                             className="avatar-img"
                             />
+                    </Cell>
+                    <Cell col={12}>
 
-                    
                     </Cell>
                 </Grid>
             </div>

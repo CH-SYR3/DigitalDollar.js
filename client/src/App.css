@@ -3,6 +3,12 @@ project-grid {
 }
 
 
+purp {
+  background: #948E99;
+  background: -webkit-linear-gradient(to right, #2E1437, #948E99); 
+  background: linear-gradient(to right, #2E1437, #948E99); 
+}
+
 
 
 
@@ -17,13 +23,6 @@ project-grid {
   justify-content: center;
   padding-top: 2em;
 }
-
-.Activity-grid {
-  
-  
-
-}
-
 
 .contact-grid h2 {
   font-family: 'Anton', sans-serif;
@@ -51,13 +50,10 @@ project-grid {
 /*LANDING PAGE CSS*/
 
 .landing-grid {
-  background: #948E99;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: auto;
-  text-align: center;
-  top: 0;
-  left: 0
+  background: #948E99;
+  background: -webkit-linear-gradient(to right, #2E1437, #948E99); 
+  background: linear-gradient(to right, #2E1437, #948E99); 
+  display: flex;
 
   }
 
@@ -116,4 +112,15 @@ project-grid {
   background: #27221F;
   color: white;
   padding: 2em;
+}
+
+
+
+.mr-auto {
+  margin-left: 985px;
+}
+
+
+.mrauto {
+  margin-left: 25px;
 }
